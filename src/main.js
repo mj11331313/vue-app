@@ -6,6 +6,7 @@ import router from './router'
 import './assets/css/reset.css'
 import './assets/js/rem.js'
 Vue.config.productionTip = false
+// 代理地址：
 global.API_PROXY = 'https://bird.ioliu.cn/v1/?url='
 /* eslint-disable no-new */
 new Vue({
