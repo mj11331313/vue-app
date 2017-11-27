@@ -1,0 +1,27 @@
+{
+  "musicData": [{
+    "title": "If You Feel My Love",
+    "author": "Blaxy Girls",
+    "src": "http://up.mcyt.net/md5/53/NDc4Nzk5_Qq4329912.mp3",
+    "musicImgSrc": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1511541120,497376727&fm=27&gp=0.jpg",
+    "lrc": "lrc/If You Feel My Love.lrc"
+  }, {
+    "title": "Free Loop",
+    "author": "Daniel Powter",
+    "src": "http://up.mcyt.net/md5/53/OTg5ODkyNA_Qq4329912.mp3",
+    "musicImgSrc": "https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=2f97989da8345982c58ae29434cf5690/faedab64034f78f04f7c961a7c310a55b2191ce7.jpg",
+    "lrc": "lrc/Free Loop.lrc"
+  }, {
+    "title": "brave heart",
+    "author": "宮崎歩",
+    "src": "http://up.mcyt.net/md5/53/MTIyMDY5NQ_Qq4329912.mp3",
+    "musicImgSrc": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=165874427,2456052780&fm=27&gp=0.jpg",
+    "lrc": "lrc/brave heart.lrc"
+  }, {
+    "title": "Croatian Rhapsody",
+    "author": "Maksim Mrvica",
+    "src": "http://up.mcyt.net/md5/53/NTM3MjA2Ng_Qq4329912.mp3",
+    "musicImgSrc": "http://img0.imgtn.bdimg.com/it/u=503092448,2880261844&fm=27&gp=0.jpg",
+    "lrc": ""
+  }]
+}
