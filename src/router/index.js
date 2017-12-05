@@ -8,6 +8,8 @@ import MusicList from '@/components/music/MusicList'
 import MusicAlbums from '@/components/music/MusicAlbums'
 import Book from '@/components/book/Book'
 import Photo from '@/components/photo/Photo'
+import PhotoList from '@/components/photo/PhotoList'
+import PhotoDetail from '@/components/photo/PhotoDetail'
 Vue.use(Router)
 
 export default new Router({
@@ -48,8 +50,16 @@ export default new Router({
       component: Book
     }, {
       path: '/photo',
-      name: 'photo',
-      component: Photo
+      component: Photo,
+      children: [
+        {
+          path: 'photolist',
+          component: PhotoList
+        }, {
+          path: 'photodetail/:index',
+          component: PhotoDetail
+        }
+      ]
     }
   ]
 })
