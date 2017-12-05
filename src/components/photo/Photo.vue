@@ -3,7 +3,7 @@
         <common-header bgColor="blueviolet">
             <span slot="header">Photo</span>
         </common-header>
-        <h1>photo</h1> 
+        <router-view></router-view> 
         <common-footer bgColor="blueviolet"></common-footer>       
     </div>
 </template>
