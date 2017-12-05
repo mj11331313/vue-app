@@ -61,14 +61,14 @@ export default {
         // url1：使用代理服务器的地址：
         let url1= API_PROXY + "http://m.maoyan.com/movie/list.json?type=hot&limit=10&offset="+ this.movieList.length;
         // url2：服务器代理失败，为完成项目而使用本地有限数据文件的地址：
-        let url2= '/static/movidata.json';
+        let url2= '/static/data/moviedata.json';
         // 代理服务器可用时，将url2换成url2即可：
         Axios.get(url1).then(res => {  // 使用axios发送ajax请求，then表示请求成功时进入的操作，res：请求返回的对象
-            let data = res.data.data.movies;  //.slice(this.movieList.length,this.movieList.length+10);  将本地文件的数据进行切割，分批显示，做成假分页          
+            let data = res.data.data.movies; //.slice(this.movieList.length,this.movieList.length+10);  //将本地文件的数据进行切割，分批显示，做成假分页          
             this.isLoading = false;  // 禁止显示加载动图
-            /* if(data.length <10){  // 若某一次请求到的数据未达到预期的数量，说明本地文件里的数据已全部获取完毕
+            if(data.length <10){  // 若某一次请求到的数据未达到预期的数量，说明本地文件里的数据已全部获取完毕
                 this.isEnd = true;  // 显示到达底部的提醒
-            } */
+            }
             // 不管本地文件是否已到达底部，都将当前请求获取的数据加入到数据列表中：
             this.movieList = this.movieList.concat(data); // arr1.concat(arr2)：将arr2数组追加到arr1数组后面           
         }).catch(() => {  // catch：请求失败时进入的操作
@@ -109,7 +109,7 @@ export default {
 .movie-score{
     float: right;
     display: block;
-    background: orchid;
+    background: burlywood;
     color: #fff;
     border-radius: 3px;
     padding: 0 3px;
