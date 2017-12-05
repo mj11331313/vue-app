@@ -33,8 +33,8 @@
 <script>
 import Axios from "axios";
 export default {
-  data(){
-      return {
+  data(){ 
+      return { // 此处返回值必须是一个对象
           movie: {},
           isLoading: true
       }
@@ -42,7 +42,7 @@ export default {
   mounted(){
       // this.$route.params.movieId：获取url传的参数movieId
       let url1 = API_PROXY +'http://m.maoyan.com/movie/'+this.$route.params.movieId+'.json';
-      let url2 = '/static/moviedetail.json';
+      let url2 = '/static/data/moviedetail.json';
       Axios.get(url1).then(res => {
           this.isLoading = false;
           this.movie = res.data.data.MovieDetailModel;
