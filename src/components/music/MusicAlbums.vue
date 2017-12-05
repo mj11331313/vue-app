@@ -19,6 +19,10 @@ export default {
         // 使用a-play播放器组件：
         'a-player': VueAplayer  // 使用vue-aplayer的标签名为a-player
     },
+    beforeRouteLeave: ((to, from, next) => {
+        // location.href = to.fullPath;
+        next();        
+    }),
     mounted(){
         Axios.get('/static/data/musicdata.json').then(res => {
             let list = res.data.musicData;
