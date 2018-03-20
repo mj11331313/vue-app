@@ -1,7 +1,7 @@
 <template>
   <div id="photo">
         <common-header bgColor="blueviolet">
-            <span slot="header">Photo</span>
+            <span slot="header">iLook</span>
         </common-header>
         <router-view></router-view> 
         <common-footer bgColor="blueviolet"></common-footer>       
