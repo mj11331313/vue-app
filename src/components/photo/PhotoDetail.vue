@@ -13,7 +13,7 @@ export default {
       styleObj() {
           return {
               // this.$store.state.photoList：获取状态池里的photoList
-              background: `#000 url(${this.$store.state.photoList[this.nowIndex].src}) no-repeat center/contain` 
+              background: `#000 url(${this.$store.state.photoList[this.nowIndex].url}) no-repeat center/contain` 
               // background-size属性要写在background属性集里，必须以position/size的形式             
           }
         }
