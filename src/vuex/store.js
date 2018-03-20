@@ -8,7 +8,7 @@ const state = {
 
 const mutations = {
     setPhotoList(state,status){
-        state.photoList = status;
+        state.photoList = status.list;
     }
 };
 
