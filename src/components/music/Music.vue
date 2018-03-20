@@ -1,7 +1,7 @@
 <template>
   <div id="music">
         <common-header bgColor="rgb(0,150,136)">
-          <span slot="header">Music</span>
+          <span slot="header">iListen</span>
         </common-header>
         <!--渲染子组件：-->
         <router-view></router-view> 
