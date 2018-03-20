@@ -2,7 +2,7 @@
   <!--动态获取style值，其值必须为一个对象：-->
   <div class="header" :style="{background: bgColor}"> <!--bgColor为自定义1背景色变量-->
     <span class="home" @click="goHome">首页</span>
-    <h1>
+    <h1 class="min-font">
       <!--使用slot（插槽）标签,方便将来完成标题参数传递：-->
       <slot name="header">默认值</slot>
     </h1>
@@ -25,6 +25,7 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
   background-color: rgb(33, 150, 243);
   height: 1rem;  
   line-height: 1rem;  
@@ -41,5 +42,8 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  font-size: .45rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style:italic;
 }
 </style>
