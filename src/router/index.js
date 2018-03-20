@@ -7,6 +7,7 @@ import Music from '@/components/music/Music'
 import MusicList from '@/components/music/MusicList'
 import MusicAlbums from '@/components/music/MusicAlbums'
 import Book from '@/components/book/Book'
+import BookList from '@/components/book/BookList'
 import Photo from '@/components/photo/Photo'
 import PhotoList from '@/components/photo/PhotoList'
 import PhotoDetail from '@/components/photo/PhotoDetail'
@@ -40,14 +41,21 @@ export default new Router({
           path: 'musiclist',
           component: MusicList
         }, {
-          path: 'musicalbums/:musicId',
+          path: 'musicalbums/:music',
           component: MusicAlbums
         }
       ]
     }, {
       path: '/book',
       name: 'book',
-      component: Book
+      component: Book,
+      redirect: '/book/booklist',
+      children: [
+        {
+          path:'booklist',
+          component: BookList
+        }
+      ]
     }, {
       path: '/photo',
       component: Photo,
