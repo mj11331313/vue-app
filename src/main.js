@@ -14,7 +14,8 @@ Vue.use( VueTouch,{ name:'v-touch'})
 
 Vue.config.productionTip = false;
 // 代理地址：
-global.API_PROXY = 'https://bird.ioliu.cn/v1/?url='
+global.API_PROXY = 'https://bird.ioliu.cn/v1/?url=';
+global.API_PROXY2 = 'https://bird.ioliu.cn/netease/';
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
